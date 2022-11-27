@@ -8,9 +8,9 @@ import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
     <motion.div
-      // variants={staggerContainer}
-      // initial="hidden"
-      whileInView="show" //用了"hidden" "show" 就去variants中找对应的object 找不到也show
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show" //用了"hidden" "show" 就去variants中找对应的object 
       viewport={{ once: false, amount: 0.25 }}//滑动到剩余0.25消失 
       className={`${styles.innerWidth} mx-auto flex flex-col `}
     >
