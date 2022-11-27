@@ -7,7 +7,7 @@ export const TypingText = ({ title, textStyles }) => (
   <motion.p
     variants={textContainer}
     // transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
-    //staggerChildren每个字母 delayChildren 整体出现的延迟
+    // staggerChildren每个字母 delayChildren 整体出现的延迟
     className={`font-normal text-[14px] text-secondary-white ${textStyles}`}
   >
     {Array.from(title).map((letter, index) => (
